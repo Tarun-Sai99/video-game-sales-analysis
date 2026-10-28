@@ -14,6 +14,8 @@ All cleaning is done in **Power Query**, so every step is recorded and can be re
 | 6 | Added `has_sales_data` (Yes/No) | from `total_sales` | Makes it easy to filter to the games that have sales figures |
 | 7 | Removed exact duplicate rows | All columns | 21 rows were exact copies of another row in every column |
 | 8 | Added `data_period` | from `release_year` | Labels each game "Tracked (up to 2018)", "Incomplete (2019+)" or "Unknown year", because VGChartz stopped tracking most sales after 2018 |
+| 9 | Added `decade` | from `release_year` | Groups years into 1970s to 2020s for trend analysis. Games with no year show "Unknown" |
+| 10 | Added `platform_family` | from `console` | Groups 81 consoles into 8 families: Nintendo, Sony, PC, Microsoft, Sega, Mobile, Atari and Other |
 
 ## Decisions
 
@@ -34,3 +36,16 @@ All cleaning is done in **Power Query**, so every step is recorded and can be re
 | Rows with no release year | 7,051 |
 | Tracked (up to 2018) | 53,482 |
 | Incomplete (2019+) | 3,462 |
+
+## Platform family mapping
+
+| Family | Consoles | Games |
+| --- | --- | ---: |
+| Nintendo | NES, SNES, N64, GC, Wii, WiiU, NS, GB, GBC, GBA, DS, DSi, DSiW, 3DS, VB, FDS, iQue, WW, VC | 17,685 |
+| Sony | PS, PS2, PS3, PS4, PS5, PSP, PSV, PSN | 16,613 |
+| PC | PC, Linux, OSX, MSD | 13,679 |
+| Microsoft | XB, X360, XOne, XS, Series, XBL | 7,884 |
+| Sega | GEN, SAT, DC, MS, GG, SCD, S32X | 3,085 |
+| Other | All remaining consoles (e.g. 3DO, Neo Geo, Commodore, Amiga, arcade) | 2,942 |
+| Mobile | iOS, And, Mob, WinP | 1,296 |
+| Atari | 2600, 5200, 7800, Lynx, AJ, AST | 811 |
