@@ -38,7 +38,7 @@ Work in progress.
 - [x] Clean the data in Power Query (21 duplicates removed, helper columns for decade, data period and platform family)
 - [x] Sales trend by decade and year (Question 1)
 - [x] Genre performance by decade (Question 2)
-- [ ] Platform dominance by era (Question 3)
+- [x] Platform dominance by era (Question 3)
 - [ ] Top publishers and best-selling games (Question 4)
 - [ ] Regional comparison (Question 5)
 - [ ] Charts and interactive dashboard
@@ -48,4 +48,5 @@ Work in progress.
 
 - Sales tracked by VGChartz peaked in **2008 at 538 million units**. The 2000s were the biggest decade (3,325 million units).
 - **Sports, Action and Shooter** games make up half of all tracked sales. Shooters were the top genre of the 2010s.
+- **Sony** has led every decade since the 1990s and accounts for about half of all tracked sales. **Microsoft** grew from 17% of sales in the 2000s to 31% in the 2010s, passing Nintendo.
 - VGChartz stopped tracking most sales after 2018, so trend analysis uses releases up to 2018 only. See the [cleaning log](docs/cleaning_log.md).

@@ -50,3 +50,40 @@ Top 8 of 20 genres shown. The 1970s (5.17M in total) are left out of this table.
 - **Platform games peaked early.** They were the 3rd biggest genre of the 1980s (21.78M, behind Action and Shooter) but fell to 71.99M in the 2010s.
 - **Fighting games had their best share in the 1990s** (84.30M, the 2nd biggest genre that decade, behind Sports).
 - **Role-Playing grew from the 2000s to the 2010s** (170.03M to 213.83M) while most genres shrank. Shooter, Action-Adventure and Music also grew.
+
+## 3. Platform dominance by era (`Platform` sheet)
+
+Two PivotTables with `platform_family` as rows and decade as columns, both filtered to `data_period = Tracked (up to 2018)` and sorted by total sales.
+
+**PivotTable 1: Total sales (M units)**
+
+| Platform family | 1970s | 1980s | 1990s | 2000s | 2010s | Total |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Sony | | | 394.22 | 1,645.48 | 1,219.29 | 3,258.99 |
+| Nintendo | | 32.33 | 163.55 | 1,032.98 | 430.92 | 1,659.78 |
+| Microsoft | | | | 578.12 | 782.50 | 1,360.62 |
+| PC | | 0.03 | 24.42 | 60.26 | 83.67 | 168.38 |
+| Atari | 5.17 | 70.13 | 0.15 | | | 75.45 |
+| Sega | | | 58.96 | 7.11 | | 66.07 |
+| Other | | | 2.28 | 0.97 | | 3.25 |
+| Mobile | | | | 0.03 | | 0.03 |
+| **Total** | **5.17** | **102.49** | **643.58** | **3,324.95** | **2,516.38** | **6,592.57** |
+
+**PivotTable 2: Market share within each decade** (Show Values As: % of Column Total)
+
+| Platform family | 1970s | 1980s | 1990s | 2000s | 2010s | Overall |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Sony | 0.00% | 0.00% | 61.25% | 49.49% | 48.45% | 49.43% |
+| Nintendo | 0.00% | 31.54% | 25.41% | 31.07% | 17.12% | 25.18% |
+| Microsoft | 0.00% | 0.00% | 0.00% | 17.39% | 31.10% | 20.64% |
+| PC | 0.00% | 0.03% | 3.79% | 1.81% | 3.33% | 2.55% |
+| Atari | 100.00% | 68.43% | 0.02% | 0.00% | 0.00% | 1.14% |
+| Sega | 0.00% | 0.00% | 9.16% | 0.21% | 0.00% | 1.00% |
+
+**Findings**
+
+- **Each era had a clear leader.** Atari owned the 1970s and 1980s (68% of 1980s sales), then Sony took over in the 1990s with 61% and led every decade after that.
+- **Sony accounts for about half of all tracked sales** (3,258.99M units, 49%), almost twice as much as Nintendo.
+- **Microsoft grew fast.** It went from 17% of sales in the 2000s to 31% in the 2010s and passed Nintendo, whose share fell from 31% to 17%.
+- **Sega disappeared after the 1990s.** It had 9% of 1990s sales but only 0.21% in the 2000s, after it stopped making consoles.
+- **PC and Mobile look small here,** but that is mostly a data gap: VGChartz tracks boxed retail sales and misses digital downloads and app stores, where most PC and mobile games are sold.
