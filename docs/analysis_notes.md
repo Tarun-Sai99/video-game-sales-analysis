@@ -87,3 +87,47 @@ Two PivotTables with `platform_family` as rows and decade as columns, both filte
 - **Microsoft grew fast.** It went from 17% of sales in the 2000s to 31% in the 2010s and passed Nintendo, whose share fell from 31% to 17%.
 - **Sega disappeared after the 1990s.** It had 9% of 1990s sales but only 0.21% in the 2000s, after it stopped making consoles.
 - **PC and Mobile look small here,** but that is mostly a data gap: VGChartz tracks boxed retail sales and misses digital downloads and app stores, where most PC and mobile games are sold.
+
+## 4. Top publishers and best-selling games (`Publishers` sheet)
+
+Two PivotTables, both filtered to `data_period = Tracked (up to 2018)`, using a Top 10 value filter and sorted by total sales.
+
+**PivotTable 1: Top 10 publishers**
+
+| Publisher | Total Sales (M units) | Games with Sales |
+| --- | ---: | ---: |
+| Activision | 722.77 | 1,044 |
+| Electronic Arts | 644.13 | 843 |
+| EA Sports | 485.66 | 540 |
+| Ubisoft | 462.28 | 1,011 |
+| THQ | 320.89 | 726 |
+| Sony Computer Entertainment | 310.82 | 567 |
+| Rockstar Games | 239.67 | 93 |
+| Konami | 210.70 | 769 |
+| Sega | 206.14 | 639 |
+| Nintendo | 139.91 | 381 |
+| **Top 10 total** | **3,742.97** | **6,613** |
+
+**PivotTable 2: Top 10 best-selling games** (sales added up across all platforms a game was released on)
+
+| Game | Total Sales (M units) |
+| --- | ---: |
+| Grand Theft Auto V | 64.29 |
+| Call of Duty: Black Ops | 30.99 |
+| Call of Duty: Modern Warfare 3 | 30.71 |
+| Call of Duty: Black Ops II | 29.59 |
+| Call of Duty: Ghosts | 28.80 |
+| Call of Duty: Black Ops 3 | 26.72 |
+| Call of Duty: Modern Warfare 2 | 25.02 |
+| Minecraft | 24.01 |
+| Grand Theft Auto IV | 22.53 |
+| Call of Duty: Advanced Warfare | 21.78 |
+| **Top 10 total** | **304.44** |
+
+**Findings**
+
+- **The top 10 publishers sold 3,742.97M units,** 57% of all tracked sales (6,592.57M).
+- **Activision is the biggest publisher** (722.77M), mostly thanks to Call of Duty, which holds 7 of the top 10 game spots.
+- **Electronic Arts is even bigger if its sports label is counted.** The data lists "Electronic Arts" and "EA Sports" as separate publishers. Together they reach 1,129.79M, more than Activision. They are kept separate here to match the source data.
+- **Rockstar Games sells far more per game than anyone else.** It reached 239.67M from only 93 games (about 2.6M per game), while Activision needed 1,044 games. Grand Theft Auto V alone sold 64.29M, more than twice the next game.
+- **Nintendo looks too small, which is a data gap.** In the whole dataset, only 383 of the 1,474 games Nintendo published have sales figures, and big hits like Mario Kart Wii and Mario Kart 8 Deluxe have none. Nintendo's real sales are much higher than this dataset shows.

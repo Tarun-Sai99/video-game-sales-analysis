@@ -23,7 +23,7 @@ An end-to-end data analysis of global video game sales using **Microsoft Excel**
 | Path | What it holds |
 |---|---|
 | `data/raw/vgchartz-2024.csv` | Original dataset, unchanged |
-| `excel/video_game_sales_analysis.xlsx` | Excel workbook: Power Query cleaning, profiling and PivotTables |
+| `excel/video_game_sales_analysis.xlsx` | Excel workbook: Power Query cleaning, profiling and PivotTables (Trend, Genre, Platform, Publishers sheets) |
 | `docs/data_dictionary.md` | What each column means |
 | `docs/data_profiling.md` | Row counts, missing values and data quality checks |
 | `docs/cleaning_log.md` | Every cleaning step and the reason for it |
@@ -39,7 +39,7 @@ Work in progress.
 - [x] Sales trend by decade and year (Question 1)
 - [x] Genre performance by decade (Question 2)
 - [x] Platform dominance by era (Question 3)
-- [ ] Top publishers and best-selling games (Question 4)
+- [x] Top publishers and best-selling games (Question 4)
 - [ ] Regional comparison (Question 5)
 - [ ] Charts and interactive dashboard
 - [ ] Key insights summary
@@ -49,4 +49,5 @@ Work in progress.
 - Sales tracked by VGChartz peaked in **2008 at 538 million units**. The 2000s were the biggest decade (3,325 million units).
 - **Sports, Action and Shooter** games make up half of all tracked sales. Shooters were the top genre of the 2010s.
 - **Sony** has led every decade since the 1990s and accounts for about half of all tracked sales. **Microsoft** grew from 17% of sales in the 2000s to 31% in the 2010s, passing Nintendo.
+- **Activision** is the top publisher (722.77M units), and **Call of Duty** holds 7 of the 10 best-selling game spots. **Grand Theft Auto V** is the best-selling game at 64.29M units, more than twice the next one.
 - VGChartz stopped tracking most sales after 2018, so trend analysis uses releases up to 2018 only. See the [cleaning log](docs/cleaning_log.md).
