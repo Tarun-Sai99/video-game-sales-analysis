@@ -131,3 +131,37 @@ Two PivotTables, both filtered to `data_period = Tracked (up to 2018)`, using a 
 - **Electronic Arts is even bigger if its sports label is counted.** The data lists "Electronic Arts" and "EA Sports" as separate publishers. Together they reach 1,129.79M, more than Activision. They are kept separate here to match the source data.
 - **Rockstar Games sells far more per game than anyone else.** It reached 239.67M from only 93 games (about 2.6M per game), while Activision needed 1,044 games. Grand Theft Auto V alone sold 64.29M, more than twice the next game.
 - **Nintendo looks too small, which is a data gap.** In the whole dataset, only 383 of the 1,474 games Nintendo published have sales figures, and big hits like Mario Kart Wii and Mario Kart 8 Deluxe have none. Nintendo's real sales are much higher than this dataset shows.
+
+## 5. Regional comparison (`Regions` sheet)
+
+Two PivotTables with genre as rows and one column per region, both filtered to `data_period = Tracked (up to 2018)` and sorted by North America sales. The second table uses Show Values As: % of Column Total, so each region adds up to 100% and shows that region's genre mix. A colour scale highlights the biggest shares.
+
+**Regional totals (M units)**
+
+| Region | Total Sales | Share of tracked sales |
+| --- | ---: | ---: |
+| North America | 3,344.24 | 51% |
+| Europe (PAL) | 1,914.23 | 29% |
+| Japan | 679.25 | 10% |
+| Other Regions | 650.41 | 10% |
+
+**Genre mix by region (% of each region's sales), top genres**
+
+| Genre | North America | Europe (PAL) | Japan | Other Regions |
+| --- | ---: | ---: | ---: | ---: |
+| Sports | 18.16% | 17.84% | 16.04% | 19.70% |
+| Action | 17.62% | 17.88% | 11.68% | 17.28% |
+| Shooter | 15.80% | 16.96% | 5.00% | 16.67% |
+| Misc | 8.84% | 7.65% | 8.16% | 8.99% |
+| Racing | 8.07% | 9.28% | 2.90% | 8.62% |
+| Role-Playing | 5.13% | 4.75% | 18.63% | 5.18% |
+| Fighting | 5.20% | 4.17% | 8.56% | 4.39% |
+| Strategy | 1.41% | 1.41% | 5.40% | 1.12% |
+
+**Findings**
+
+- **North America is half the market,** with 3,344.24M units (51% of tracked sales). Europe is second with 29%. Japan and all other regions have about 10% each.
+- **North America and Europe buy almost the same mix of games.** Sports, Action and Shooter are the top 3 in both, each at 16 to 18%.
+- **Japan is very different.** Role-Playing is its #1 genre (18.63% of sales) but only about 5% in every other region. Fighting (8.56%), Strategy (5.40%) and Puzzle (4.28%) are also much more popular in Japan.
+- **Shooters and Racing games barely sell in Japan.** Shooters are 5.00% of Japan's sales against 16 to 17% in the West, and Racing is 2.90% against 8 to 9%.
+- **For a publisher, this means one global plan does not fit Japan.** A Western shooter can rely on North America and Europe, while an RPG needs Japan as a core market.
