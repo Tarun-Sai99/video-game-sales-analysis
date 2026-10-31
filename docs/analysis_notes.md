@@ -19,6 +19,8 @@ Findings from the PivotTables in `excel/video_game_sales_analysis.xlsx`. Sales a
 
 **PivotTable 2: Sales by release year**, filtered to `data_period = Tracked (up to 2018)`. Total: 6,592.57M units.
 
+**Chart:** a line PivotChart of PivotTable 2, "Video Game Sales by Release Year (M units)", shows the rise to the 2008 peak and the decline after it.
+
 **Findings**
 
 - **The 2000s were the biggest decade,** with 3,324.95M units sold, about half of all tracked sales.
@@ -42,6 +44,8 @@ PivotTable with genre as rows and decade as columns, filtered to `data_period = 
 | Fighting | 2.29 | 84.30 | 170.67 | 83.13 | 340.39 |
 
 Top 8 of 20 genres shown. The 1970s (5.17M in total) are left out of this table.
+
+**Chart:** a stacked bar PivotChart, "Total Sales by Genre and Decade (M units)", with the biggest genre on top. Each bar is split by decade, which shows how much of each genre's sales came from the 2010s.
 
 **Findings**
 
