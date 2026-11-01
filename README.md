@@ -42,7 +42,7 @@ Work in progress.
 - [x] Top publishers and best-selling games (Question 4)
 - [x] Regional comparison (Question 5)
 - [x] Charts: sales trend by year and genre by decade
-- [ ] Charts: platform share and regional genre mix
+- [x] Charts: platform share and regional genre mix
 - [ ] Interactive dashboard with slicers
 - [ ] Key insights summary
 

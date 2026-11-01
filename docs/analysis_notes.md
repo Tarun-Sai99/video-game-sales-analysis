@@ -73,7 +73,7 @@ Two PivotTables with `platform_family` as rows and decade as columns, both filte
 | Mobile | | | | 0.03 | | 0.03 |
 | **Total** | **5.17** | **102.49** | **643.58** | **3,324.95** | **2,516.38** | **6,592.57** |
 
-**PivotTable 2: Market share within each decade** (Show Values As: % of Column Total)
+**PivotTable 2: Market share within each decade.** In the workbook this table has decades as rows and platform families as columns (so it can feed the chart below), with Show Values As: % of Row Total. It is shown here with families as rows for easier reading.
 
 | Platform family | 1970s | 1980s | 1990s | 2000s | 2010s | Overall |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -91,6 +91,8 @@ Two PivotTables with `platform_family` as rows and decade as columns, both filte
 - **Microsoft grew fast.** It went from 17% of sales in the 2000s to 31% in the 2010s and passed Nintendo, whose share fell from 31% to 17%.
 - **Sega disappeared after the 1990s.** It had 9% of 1990s sales but only 0.21% in the 2000s, after it stopped making consoles.
 - **PC and Mobile look small here,** but that is mostly a data gap: VGChartz tracks boxed retail sales and misses digital downloads and app stores, where most PC and mobile games are sold.
+
+**Chart:** a stacked column PivotChart of PivotTable 2, "Market Share by Platform Family and Decade", with one bar per decade that adds up to 100%. It shows the hand-over from Atari to Sony and Microsoft's growth in the 2010s.
 
 ## 4. Top publishers and best-selling games (`Publishers` sheet)
 
@@ -139,6 +141,8 @@ Two PivotTables, both filtered to `data_period = Tracked (up to 2018)`, using a 
 ## 5. Regional comparison (`Regions` sheet)
 
 Two PivotTables with genre as rows and one column per region, both filtered to `data_period = Tracked (up to 2018)` and sorted by North America sales. The second table uses Show Values As: % of Column Total, so each region adds up to 100% and shows that region's genre mix. A colour scale highlights the biggest shares.
+
+**Chart:** a clustered column PivotChart of the % table, "Genre Mix by Region (% of each region's sales)". Japan's Role-Playing bar stands out clearly against the other regions.
 
 **Regional totals (M units)**
 
