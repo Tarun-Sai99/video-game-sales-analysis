@@ -173,3 +173,20 @@ Two PivotTables with genre as rows and one column per region, both filtered to `
 - **Japan is very different.** Role-Playing is its #1 genre (18.63% of sales) but only about 5% in every other region. Fighting (8.56%), Strategy (5.40%) and Puzzle (4.28%) are also much more popular in Japan.
 - **Shooters and Racing games barely sell in Japan.** Shooters are 5.00% of Japan's sales against 16 to 17% in the West, and Racing is 2.90% against 8 to 9%.
 - **For a publisher, this means one global plan does not fit Japan.** A Western shooter can rely on North America and Europe, while an RPG needs Japan as a core market.
+
+## 6. Dashboard (`Dashboard` sheet)
+
+The first sheet of the workbook brings the analysis together on one page.
+
+- **Summary cards:** Total Sales (M units), Top Platform Family, Top Publisher and Best-Selling Game. Total Sales uses `GETPIVOTDATA` on the year PivotTable, and the other three point to the first row of their sorted PivotTables, so all four update when a filter is applied.
+- **Charts:** the four PivotCharts (sales by year, genre by decade, platform market share, genre mix by region) in a 2 x 2 grid.
+- **Slicers:** `genre` and `platform_family`.
+
+| Slicer | Connected to | Not connected to |
+| --- | --- | --- |
+| genre | Trend (both), Platform sales table, Publishers (both) | Genre, Platform share table, Regions |
+| platform_family | Trend (both), Publishers (both), Regions (both) | Genre, Platform (both) |
+
+**Why some tables are left out:** a slicer on the same field a chart is split by would hide parts of that chart. In stacked PivotCharts, Excel also assigns colours by position, so when a filter removes a series the colours shift and the legend no longer matches. The genre-by-decade and platform-share charts stay unfiltered for that reason.
+
+**Example:** selecting **Shooter** in the genre slicer changes the cards to 995.47M units, Sony, Activision and Call of Duty: Black Ops.

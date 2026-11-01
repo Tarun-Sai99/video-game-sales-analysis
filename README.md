@@ -23,7 +23,7 @@ An end-to-end data analysis of global video game sales using **Microsoft Excel**
 | Path | What it holds |
 |---|---|
 | `data/raw/vgchartz-2024.csv` | Original dataset, unchanged |
-| `excel/video_game_sales_analysis.xlsx` | Excel workbook: Power Query cleaning, profiling and PivotTables (Trend, Genre, Platform, Publishers, Regions sheets) and PivotCharts |
+| `excel/video_game_sales_analysis.xlsx` | Excel workbook: Power Query cleaning, profiling and PivotTables (Trend, Genre, Platform, Publishers, Regions sheets), PivotCharts and an interactive Dashboard sheet |
 | `docs/data_dictionary.md` | What each column means |
 | `docs/data_profiling.md` | Row counts, missing values and data quality checks |
 | `docs/cleaning_log.md` | Every cleaning step and the reason for it |
@@ -43,7 +43,7 @@ Work in progress.
 - [x] Regional comparison (Question 5)
 - [x] Charts: sales trend by year and genre by decade
 - [x] Charts: platform share and regional genre mix
-- [ ] Interactive dashboard with slicers
+- [x] Interactive dashboard with slicers
 - [ ] Key insights summary
 
 ## Early findings
