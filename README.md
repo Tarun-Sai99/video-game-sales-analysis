@@ -28,6 +28,7 @@ An end-to-end data analysis of global video game sales using **Microsoft Excel**
 | `docs/data_profiling.md` | Row counts, missing values and data quality checks |
 | `docs/cleaning_log.md` | Every cleaning step and the reason for it |
 | `docs/analysis_notes.md` | Findings from each analysis |
+| `docs/insights.md` | Key insights, recommendations and data limitations |
 
 ## Project status
 
@@ -44,7 +45,7 @@ Work in progress.
 - [x] Charts: sales trend by year and genre by decade
 - [x] Charts: platform share and regional genre mix
 - [x] Interactive dashboard with slicers
-- [ ] Key insights summary
+- [x] Key insights summary
 
 ## Early findings
 
