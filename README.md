@@ -2,8 +2,6 @@
 
 An end-to-end data analysis of global video game sales from 1971 to 2018, built entirely in **Microsoft Excel**: data profiling, cleaning with Power Query, PivotTable analysis, PivotCharts and an interactive dashboard.
 
-![Video game sales dashboard](images/dashboard.png)
-
 ## Charts
 
 <table>
@@ -16,6 +14,12 @@ An end-to-end data analysis of global video game sales from 1971 to 2018, built 
 <td width="50%"><b>Japan buys Role-Playing games almost 4 times more than other regions, and very few Shooters</b><br><img src="images/regions.png" alt="Genre mix by region"></td>
 </tr>
 </table>
+
+## Interactive dashboard
+
+The Dashboard sheet brings everything together: four summary cards, the four charts, and slicers that filter the charts and summary cards by genre and platform family.
+
+![Video game sales dashboard](images/dashboard.png)
 
 ## Business questions
 
