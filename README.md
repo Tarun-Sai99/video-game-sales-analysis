@@ -17,7 +17,7 @@ An end-to-end data analysis of global video game sales from 1971 to 2018, built 
 
 ## Interactive dashboard
 
-The Dashboard sheet brings everything together: four summary cards, the four charts, and slicers that filter the charts and summary cards by genre and platform family.
+The Dashboard sheet brings everything together: four summary cards, the four charts, and slicers that filter the summary cards, the sales trend and the regional chart by genre and platform family.
 
 ![Video game sales dashboard](images/dashboard.png)
 
