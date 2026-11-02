@@ -1,6 +1,8 @@
 # Video Game Sales Analysis (Excel)
 
-An end-to-end data analysis of global video game sales using **Microsoft Excel**, covering data profiling, data cleaning, pivot tables, charts and an interactive dashboard.
+An end-to-end data analysis of global video game sales from 1971 to 2018, built entirely in **Microsoft Excel**: data profiling, cleaning with Power Query, PivotTable analysis, PivotCharts and an interactive dashboard.
+
+![Video game sales dashboard](images/dashboard.png)
 
 ## Business questions
 
@@ -10,48 +12,64 @@ An end-to-end data analysis of global video game sales using **Microsoft Excel**
 4. Who are the top publishers, and what are the best-selling games?
 5. How do buying patterns differ between North America, Europe/PAL and Japan?
 
+## Key findings
+
+- **The market peaked in 2008** at 538 million units sold. The 2000s were the biggest decade, with about half of all tracked sales.
+- **Sports, Action and Shooter games make up half of all sales.** Shooters became the top genre of the 2010s.
+- **Sony has led every decade since the 1990s** and accounts for 49% of all tracked sales. **Microsoft** grew from 17% to 31% between the 2000s and the 2010s, passing Nintendo.
+- **Activision is the top publisher** (723M units), and **Call of Duty** holds 7 of the 10 best-selling game spots. **Grand Theft Auto V** is the best-selling game (64M units), more than twice the next one.
+- **North America buys half of all games.** **Japan** has a very different taste: Role-Playing is its #1 genre (19% of its sales, against about 5% elsewhere), while Shooters are only 5%.
+
+Full answers, recommendations and data limitations: [docs/insights.md](docs/insights.md).
+
 ## Dataset
 
-[Video Game Sales 2024](https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024) from Kaggle, collected from VGChartz. It covers about 64,000 game releases from 1971 to 2024, with sales in millions of units by region, critic scores and release dates.
+[Video Game Sales 2024](https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024) from Kaggle, collected from VGChartz. It has 64,016 game releases from 1971 to 2024, with sales in millions of units by region, critic scores, publishers and release dates.
 
-## Tools
+VGChartz stopped tracking most sales after 2018, so the trend analysis covers games released up to 2018 (6,592.57 million units in total).
 
-- Microsoft Excel 2021: Power Query, PivotTables, PivotCharts, slicers, XLOOKUP
+## Process
+
+| Step | What was done | Details |
+| --- | --- | --- |
+| 1. Profile | Counted rows, blanks and duplicates in every column, and found that sales data almost stops after 2018 | [data_profiling.md](docs/data_profiling.md) |
+| 2. Clean | Power Query: removed unused columns, trimmed text, filled blank developers, removed 21 exact duplicates, and added `release_year`, `has_sales_data`, `data_period`, `decade` and `platform_family` | [cleaning_log.md](docs/cleaning_log.md) |
+| 3. Analyse | One sheet of PivotTables per business question: Trend, Genre, Platform, Publishers and Regions | [analysis_notes.md](docs/analysis_notes.md) |
+| 4. Visualise | Four PivotCharts and a Dashboard sheet with summary cards and slicers for genre and platform family | [analysis_notes.md](docs/analysis_notes.md#6-dashboard-dashboard-sheet) |
+| 5. Conclude | Answers to the business questions, recommendations and limitations | [insights.md](docs/insights.md) |
+
+## Excel skills used
+
+- **Power Query:** data types, trimming and cleaning text, replacing values, custom columns (`if` logic, `Date.Year`, `List.Contains`), removing duplicates
+- **Formulas:** `COUNTBLANK`, `COUNTIF`, `ROWS`, `INDIRECT`, `GETPIVOTDATA`
+- **PivotTables:** report filters, Top 10 value filters, sorting, Show Values As (% of Column Total, % of Row Total), Count vs Sum
+- **PivotCharts:** line, stacked bar, stacked column (as 100% shares) and clustered column charts
+- **Dashboard:** summary cards linked to PivotTables, slicers with Report Connections across several PivotTables
+- **Conditional formatting:** colour scales
 
 ## Repository structure
 
 | Path | What it holds |
 |---|---|
+| `excel/video_game_sales_analysis.xlsx` | The workbook. Sheets: Dashboard, Profile, Trend, Genre, Platform, Publishers, Regions, Clean, Raw |
 | `data/raw/vgchartz-2024.csv` | Original dataset, unchanged |
-| `excel/video_game_sales_analysis.xlsx` | Excel workbook: Power Query cleaning, profiling and PivotTables (Trend, Genre, Platform, Publishers, Regions sheets), PivotCharts and an interactive Dashboard sheet |
 | `docs/data_dictionary.md` | What each column means |
 | `docs/data_profiling.md` | Row counts, missing values and data quality checks |
 | `docs/cleaning_log.md` | Every cleaning step and the reason for it |
-| `docs/analysis_notes.md` | Findings from each analysis |
+| `docs/analysis_notes.md` | Tables and findings from each analysis |
 | `docs/insights.md` | Key insights, recommendations and data limitations |
+| `images/dashboard.png` | Screenshot of the dashboard |
 
-## Project status
+## How to use the workbook
 
-Work in progress.
+1. Download `excel/video_game_sales_analysis.xlsx` and open it in Excel 2021 or Microsoft 365 on Windows.
+2. Start on the **Dashboard** sheet. Click a genre or platform family in the slicers to filter the cards and charts. Use the clear filter button (top right of each slicer) to reset.
+3. The sheets after it hold the PivotTables behind each chart. **Clean** is the Power Query output and **Raw** is the original data.
 
-- [x] Load the raw data and write the data dictionary
-- [x] Profile the data (missing values, duplicates, incomplete years)
-- [x] Clean the data in Power Query (21 duplicates removed, helper columns for decade, data period and platform family)
-- [x] Sales trend by decade and year (Question 1)
-- [x] Genre performance by decade (Question 2)
-- [x] Platform dominance by era (Question 3)
-- [x] Top publishers and best-selling games (Question 4)
-- [x] Regional comparison (Question 5)
-- [x] Charts: sales trend by year and genre by decade
-- [x] Charts: platform share and regional genre mix
-- [x] Interactive dashboard with slicers
-- [x] Key insights summary
+## Limitations
 
-## Early findings
+- Sales figures cover boxed retail copies only. Digital downloads and mobile app stores are missing, so PC and mobile look smaller than they really are.
+- Many big Nintendo games have no sales figures in the source data.
+- Figures are units sold, not revenue.
 
-- Sales tracked by VGChartz peaked in **2008 at 538 million units**. The 2000s were the biggest decade (3,325 million units).
-- **Sports, Action and Shooter** games make up half of all tracked sales. Shooters were the top genre of the 2010s.
-- **Sony** has led every decade since the 1990s and accounts for about half of all tracked sales. **Microsoft** grew from 17% of sales in the 2000s to 31% in the 2010s, passing Nintendo.
-- **Activision** is the top publisher (722.77M units), and **Call of Duty** holds 7 of the 10 best-selling game spots. **Grand Theft Auto V** is the best-selling game at 64.29M units, more than twice the next one.
-- **North America** buys half of all tracked games. **Japan** has a very different taste: Role-Playing is its #1 genre (19% of sales, against about 5% elsewhere), while Shooters are only 5% there.
-- VGChartz stopped tracking most sales after 2018, so trend analysis uses releases up to 2018 only. See the [cleaning log](docs/cleaning_log.md).
+More detail in [docs/insights.md](docs/insights.md#limitations-of-the-data).
