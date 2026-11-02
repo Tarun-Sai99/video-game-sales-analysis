@@ -4,6 +4,19 @@ An end-to-end data analysis of global video game sales from 1971 to 2018, built 
 
 ![Video game sales dashboard](images/dashboard.png)
 
+## Charts
+
+<table>
+<tr>
+<td width="50%"><b>Sales peaked in 2008 at 538M units, then fell every year after 2011</b><br><img src="images/trend.png" alt="Video game sales by release year"></td>
+<td width="50%"><b>Sports, Action and Shooter make up half of all sales. Shooters grew fastest in the 2010s</b><br><img src="images/genre.png" alt="Total sales by genre and decade"></td>
+</tr>
+<tr>
+<td width="50%"><b>Atari ruled the 1980s, Sony has led since the 1990s, and Microsoft passed Nintendo in the 2010s</b><br><img src="images/platform.png" alt="Market share by platform family and decade"></td>
+<td width="50%"><b>Japan buys Role-Playing games almost 4 times more than other regions, and very few Shooters</b><br><img src="images/regions.png" alt="Genre mix by region"></td>
+</tr>
+</table>
+
 ## Business questions
 
 1. How did the global video game market grow and decline over the years?
@@ -58,7 +71,7 @@ VGChartz stopped tracking most sales after 2018, so the trend analysis covers ga
 | `docs/cleaning_log.md` | Every cleaning step and the reason for it |
 | `docs/analysis_notes.md` | Tables and findings from each analysis |
 | `docs/insights.md` | Key insights, recommendations and data limitations |
-| `images/dashboard.png` | Screenshot of the dashboard |
+| `images/` | Dashboard screenshot and the four charts used in this README |
 
 ## How to use the workbook
 
