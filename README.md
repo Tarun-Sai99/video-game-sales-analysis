@@ -8,7 +8,7 @@ An end-to-end data analysis of global video game sales from 1971 to 2018, built 
 
 <table>
 <tr>
-<td width="50%"><b>Sales peaked in 2008 at 538M units, then fell every year after 2011</b><br><img src="images/trend.png" alt="Video game sales by release year"></td>
+<td width="50%"><b>Sales peaked in 2008 at 538M units and declined after 2011</b><br><img src="images/trend.png" alt="Video game sales by release year"></td>
 <td width="50%"><b>Sports, Action and Shooter make up half of all sales. Shooters grew fastest in the 2010s</b><br><img src="images/genre.png" alt="Total sales by genre and decade"></td>
 </tr>
 <tr>
